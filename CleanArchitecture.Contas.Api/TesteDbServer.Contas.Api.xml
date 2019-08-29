@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CleanArchitecture.Contas.Api</name>
+    </assembly>
+    <members>
+        <member name="M:CleanArchitecture.Contas.Api.Controllers.ContasController.CriarConta(CleanArchitecture.Contas.Api.Models.AbrirContaRequest,CleanArchitecture.Application.Comandos.AbrirConta.IAbrirContaUseCase)">
+            <summary>
+            Abertura de conta
+            </summary>
+            <param name="request"></param>
+            <param name="abrirContaUseCase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CleanArchitecture.Contas.Api.Controllers.ContasController.DetalharConta(System.String,CleanArchitecture.Application.Comandos.DetalharConta.IDetalharContaUseCase)">
+            <summary>
+            Obtém detalhes de uma conta
+            </summary>
+            <param name="contaId">Identificador da conta (Guid)</param>
+            <param name="detalharContaUseCase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CleanArchitecture.Contas.Api.Controllers.ContasController.Creditar(System.String,CleanArchitecture.Contas.Api.Models.CreditarRequest,CleanArchitecture.Application.Comandos.Creditar.ICreditarUseCase)">
+            <summary>
+            Lança um crédito em uma conta
+            </summary>
+            <param name="contaId">Identificador da conta (Guid)</param>
+            <param name="request"></param>
+            <param name="creditarUseCase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CleanArchitecture.Contas.Api.Controllers.ContasController.Debitar(System.String,CleanArchitecture.Contas.Api.Models.DebitarRequest,CleanArchitecture.Application.Comandos.Debitar.IDebitarUseCase)">
+            <summary>
+            Lança um débito em uma conta
+            </summary>
+            <param name="contaId">Identificador da conta (Guid)</param>
+            <param name="request"></param>
+            <param name="abrirContaUseCase"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CleanArchitecture.Contas.Api.Controllers.ContasController.Transferir(CleanArchitecture.Contas.Api.Models.TransferirRequest,CleanArchitecture.Application.Comandos.Transferir.ITransferirUseCase)">
+            <summary>
+            Realiza transferência entre contas correntes
+            </summary>
+            <param name="transferirRequest"></param>
+            <param name="transferirUseCase"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
